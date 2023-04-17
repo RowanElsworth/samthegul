@@ -18,13 +18,16 @@
             align-items: center;
             justify-content: center;
             overflow: hidden;
+            background: black;
         }
         img {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 4.4rem;
-            animation: sam 1.5s infinite;
+            animation: sam 1.5s infinite, rainbow 0.7s linear infinite;
             aspect-ratio: 1 / 1;
             height: 60%;
+            border-radius: 50%;
+            background: blue;
         }
 
         @keyframes sam {
@@ -48,6 +51,14 @@
             100% {
                 transform: rotate(0) translateY(-60px);
                 width: 45vw;
+            }
+        }
+        @keyframes rainbow {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+            100% {
+                filter: hue-rotate(360deg);
             }
         }
     </style>
