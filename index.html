@@ -17,32 +17,42 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
         }
-        h1 {
+        img {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 4.4rem;
             animation: sam 1.5s infinite;
+            aspect-ratio: 1 / 1;
+            height: 60%;
         }
+
         @keyframes sam {
             0% {
                 transform: rotate(0) translateY(-60px);
+                width: 45vw;
             }
             25% {
                 transform: rotate(-10deg) scale(1.4) translateX(-190px);
+                width: 65vw;
             }
             50% {
                 transform: rotate(0) translateY(-60px);
+                width: 45vw;
+
             }
             75% {
                 transform: rotate(10deg) scale(1.4) translateX(190px);
+                width: 65vw;
             }
             100% {
                 transform: rotate(0) translateY(-60px);
+                width: 45vw;
             }
         }
     </style>
 </head>
 <body>
-    <h1>SamTheGul</h1>
+    <image src="sam.webp">
 </body>
 </html>
